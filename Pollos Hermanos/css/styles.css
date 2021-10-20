@@ -1,0 +1,83 @@
+body {
+  font-size: 15px;
+  color: #F20505;
+  background-color: #F27405;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* generalizar
+fuente de color: https://color.adobe.com/es/search?q=pollos%20hermanos
+https://fonts.google.com/specimen/Chango#glyphs
+ */
+
+
+/** header **/
+
+#header-nav{
+  background-color: #034AA6;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img{
+  background: url('../imagenes/logo.png') no-repeat;
+  width: 200px;
+  height: 300px;
+  margin: 15px 150px 8px 0;
+}
+
+.navbar-brand{
+  padding-top: :25px;
+}
+
+.navbar-brand h1{ /* nombre restaurante*/
+  font-family: 'Chango', cursive;
+  color: #F20505;
+  font-size: 40px; /* 1.5em*/
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1.5px 1.5px 1.5px #F27405;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+  text-decoration: none;
+}
+
+/* lista*/
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #BF9663;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* We Deliver */
+  color: #F27405;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}

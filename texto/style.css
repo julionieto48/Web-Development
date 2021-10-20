@@ -1,0 +1,19 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: whitesmoke;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+button{
+    border: 0ex;
+    padding:10px;
+    background-color: bisque;
+}
+button:hover{
+    background: orange;
+    cursor: pointer;
+}
