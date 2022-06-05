@@ -1,0 +1,164 @@
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #16232E;
+  min-height: 100px;
+  margin-top: 100px;
+  
+}
+
+.container{
+  background-color: #E3C75F ;
+
+}
+
+#formulario{
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) ;
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+  
+  
+    
+}
+
+.header{
+  background-color:#CC8D1A ;
+  border-bottom: 1px solid #CC8D1A;
+  padding: 5% 25%;
+  border-radius: 5px;
+}
+
+.header h1{
+  margin: 0;
+}
+
+#form{
+  padding: 5% 40px;
+}
+
+.form-group{
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-group label{
+  display: inline-block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/**/
+.form-group input{
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  display: block;
+
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+
+}
+
+.form-group.success input{
+  border-color: #16232E;
+}
+
+.form-group.error input{
+  border-color: #801206;
+}
+
+/**/
+i{
+  width: 25px;
+  height: 25px;
+}
+
+.form-group i{
+  position: absolute;
+  top: 40px;
+  right: 10px;
+
+  
+}
+
+.form-group.success i.fa-circle-check{
+  visibility: visible;
+  color: #164C45 ;
+}
+
+.form-group.error i.fa-circle-exclamation{
+  visibility: visible;
+  color: #801206;
+
+}
+
+.form-group small{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+.form-group.error small{
+  
+  visibility: visible;
+  color: #801206;
+}
+
+/**/
+
+#form button{
+  background-color: #16232E;
+  border: 2px solid #16232E ;
+  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 15px;
+
+}
+
+/*tabla */
+
+#tabla{
+  margin: 25% auto;
+  
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) ;
+  width: 800px;
+  max-width: 100%;
+  overflow: hidden;
+  
+  
+    
+}
+
+.table {
+  
+  border-collapse: collapse;
+  /*border: 0.5px solid black;
+  width:100%;*/
+  min-width: 400px;
+  margin: 25px auto;
+
+}
+
+.table thead {
+  background-color: #16232E;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  
+  width: 100%;
+  border-radius: 10px;
+  
+}

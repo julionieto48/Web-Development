@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    /*display: flex;
+    justify-content: center;*/
+    align-items: center;
+    background-color: #042940;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 10px;
+    
+}
+
+#carta{
+    
+    
+    background: #005C53;
+    display: flex;
+    
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    height: 100%;
+    
+    
+    box-shadow: 0px 7px 10px rgba(0, 0,0,0.5);
+    transition: 0.5s ease-in-out;
+    
+    border-radius: 10px;
+	width: auto;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+    
+}
+
+#carta:hover{
+    transform: translateY(20px);
+}
+
+#carta::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,#042940,#9FC131);
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+#carta:hover:before{
+    opacity: 1;
+}
+
+
+#card img{
+    max-width: 100%;
+    margin: auto;
+    object-fit: contain;
+    position:absolute;
+    
+
+}
+
+
+#carta .info{
+ 
+    
+    color: #D6D58E;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    position: relative;
+    z-index: 3;
+
+    
+}
+
+#carta:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+  
+}
+
+#carta .info h1{
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+#carta .info .btn{
+    text-decoration: none;
+    background: #D6D58E;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+
+}
+
+#carta .info .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0, 0,0,0.5);
+
+}
+
+.modeSelector{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+
+
+.button{
+    display: inline-block;
+    width: 90px;
+    height: 45px;
+    background-color: #ecf1c5;
+    position: relative;
+    cursor: pointer;
+    border-radius: 15px;
+
+    margin: 40px 10px;
+}
+
+.button::after{
+    content: url('./plus-solid.svg');
+    width: 40px;
+    height: 40px;
+    background-color: #005C53;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+    position: absolute;
+    top: -5px;
+    left:0%;
+    display: grid;
+    place-content: center;
+    line-height: 0;
+    transition: background-color 1s, transform 1s ease-in;
+}
+
+#toggle:checked+.button::after {
+    content: url('./table-cells-solid.svg');
+    
+    background-color: #042940;
+    transform: translateX(50px) rotate(360deg);
+    /* Since the width of the button is 90px and the pseudo element is 40px we translate by a number that adds up to 90. So we translate to the right by 50px ( 40 + 50 = 90 width of the button). We also rotate this element by 360 degrees. */
+}
+
+
+#toggle{
+    display: none;
+}
+
+.confrimarCreacion{
+    display: block;
+}
+
+
+.confrimarCreacion {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 40px 40px;
+    
+}
+
+.confrimarCreacion .btn {
+   visibility: "hidden";
+}
+
+
+.listaMascotas{
+    display: none;
+    
+    width: 100%;
+    text-align: center;
+}
+
+.listaMascotas .top_content{
+    
+    font-weight: 300;
+    font-size: 54px;
+    line-height: 58px;
+    margin: 40px 10px;
+    color: #D6D58E;
+
+}
+
+

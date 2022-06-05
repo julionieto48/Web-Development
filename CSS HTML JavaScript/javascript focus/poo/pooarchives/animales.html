@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animales.css">
+    <title>Document</title>
+
+    <script type="text/javascript">  
+        function ValidateModeSelection()  
+        {  
+            var estado = document.getElementById("toggle").checked;  
+            
+    
+            if (estado == true){
+                console.log(estado);
+                //document.getElementById("listaMascotas").scrollIntoView({behavior: 'smooth'});
+                /*listaMascotas.style.display = "visible";
+                creacion.style.display = "hidden";*/
+                document.getElementById("listaMascotas").style.display = "block";
+                document.getElementById("creacion").style.display = "none";
+            } else if(estado == false) {
+                console.log(estado);
+                //document.getElementById("creacion").scrollIntoView({behavior: 'smooth'});
+                /*listaMascotas.style.display = "hidden";
+                creacion.style.display = "visible";*/
+                document.getElementById("listaMascotas").style.display = "none";
+                document.getElementById("creacion").style.display = "block";
+                
+            }
+        }  
+    
+        
+    </script>
+   
+</head>
+<body>
+
+    <div class="modeSelector">
+        <input type="checkbox" id="toggle"  onclick="ValidateModeSelection()" name="modo" >  <!-- <a href="#listaMascotas" ></a> -->
+        <label for="toggle" class="button"></label>
+        <hr>
+    </div>
+    
+
+    <section class="crearMascota" id="creacion">
+        <div class="container">
+
+        
+
+            <div class="Bunny" id="carta">
+                <img src="bunny.png" >
+                <div class="info" >  <!--style="background-image: url('./bunny.png')-->
+                    <h1>Conejo</h1>
+                    <a href="#" class="btn">Seleccionar</a>
+                </div>
+                
+            </div>
+    
+            <div class="Cat" id="carta">
+                <img src="cat.png" >
+                <div class="info" >
+                    <h1>Gato</h1>
+                    <a href="#" class="btn">Seleccionar</a>
+                </div>
+                
+            </div>
+    
+            <div class="Doggy" id="carta">
+                <img src="dog.png" >
+                <div class="info" >
+                    <h1>Perro</h1>
+                    <a href="#" class="btn">Seleccionar</a>
+                </div>
+                
+            </div>
+    
+        </div> 
+
+        <div class="confrimarCreacion">
+            
+            <button> Crear Perrito</button> 
+        </div>
+
+        <hr>
+
+    </section> <!--creacion section   close--> 
+
+   <section class="listaMascotas" id="listaMascotas">
+       <div class="top_content">
+           <h2> Mis Mascotas</h2>
+       </div>
+
+   </section> <!--mis mascotas  close--> 
+
+</body>
+
+
+</html>

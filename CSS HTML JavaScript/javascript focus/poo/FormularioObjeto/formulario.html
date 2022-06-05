@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
+
+    <script src="formularioUi.js" async></script>
+
+    
+</head>
+
+
+<body>
+    <div class="container" id="formulario">
+        <div class="header">
+            <h1> Registro de Amigos</h1>
+        </div>
+        
+        <form action="" id="form">
+            <div class="form-group">
+                <label for="txtId"> Cedula </label>
+                <input type="text" class="form-control" id="txtId" placeholder=" Ingresar numero de cedula">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error</small>
+            </div>
+    
+            <div class="form-group">
+                <label for="txtName"> Nombre </label>
+                <input type="tel" class="form-control" id="txtName" placeholder=" Ingresar Nombre Completo">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error</small>
+            </div>
+    
+            <div class="form-group">
+                <label for="txtMobil"> Numero Mobil </label>
+                <input type="tel" class="form-control" id="txtMobil" placeholder=" 123-456-78-90" pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error</small>
+            </div>
+    
+            <div class="form-group">
+                <label for="txtCumpleaños"> Cumpleaños</label>
+                <input type="date" class="form-control" id="txtCumpleaños" >
+                
+            </div>
+
+            <div class="form-group">
+                <label for="txtMail"> E-Mail </label>
+                <input type="email" class="form-control" id="txtMail" placeholder=" Ingresar e-mail">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error</small>
+            </div>
+    
+            <button id="btnGuardarAmigo"> Agregar</button>
+            <!-- <input type="submit" id="btnGuardarAmigo"> -->
+
+        </form>
+
+        
+
+        
+
+    </div>
+
+
+    <div class="container" id="tabla">
+
+        
+        <h1> Mi Lista de Amigos</h1>
+        
+        <table class="table" id="tablaAmigos">
+            <thead>
+                <tr>
+                    <th> Cedula </th>
+                    <th> Nombre </th>
+                    <th> Apellido </th>
+                    <th> Telefono </th>
+                    <th> Cumpleaños </th>
+                    <th> E-Mail </th>
+                    <th> Select </th>
+
+                   
+                  </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+
+        </table>
+    </div>
+
+    
+    
+    <script src="logicaFormulario.js"></script>
+    
+</body>
+</html>

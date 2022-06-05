@@ -1,0 +1,108 @@
+body {
+    margin: auto;
+    padding: auto;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #4C4EE0;
+    
+  }
+  
+  h1 {
+    text-align: center;
+    color: #4C4EE0;
+  }
+  
+  .container {
+    margin-top: 10%;
+    margin-bottom: 30px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 3%;
+  }
+  
+  .search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: block;
+  }
+  
+  form {
+    display: flex;
+  }
+  
+  input {
+    padding: 15px 10px;
+    outline: none;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .li-container {
+    background-color: white;
+    width: 100%;
+    color: darkslategray;
+    margin-top: 20px;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+  }
+  
+  li p {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .btn-delete {
+    margin-left: auto;
+    border: none;
+    background-color: #FF6D5E;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 10%;
+    font-size: 1.2em;
+  }
+  
+  .btn-delete:hover {
+    cursor: pointer;
+    background-color: #F85854;
+  }
+  
+  .btn-add {
+    padding: 7px 15px;
+    border: none;
+    color: white;
+    font-family: fantasy;
+    background-color: #4C4EE0;
+    font-size: 2rem;
+    outline: none;
+    margin-left: auto;
+  }
+  
+  .btn-add:hover {
+    cursor: pointer;
+    background-color: darkcyan;
+  }
+  
+  .empty {
+    color: darkslategrey;
+    text-align: center;
+  }

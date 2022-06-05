@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+        <input type="number" name="estatura" id="estatura" placeholder=" estatura (cm)">
+        <input type="number" name="estatura" id="peso" placeholder=" peso (kg)">
+        <input type= "submit" id="calculo" value="Calcular" onclick="calculoImc(document.getElementById('peso'), document.getElementById('estatura'));" >
+        
+   
+        <p id ="indice"></p>
+
+        <section>
+            <input type="checkbox" onchange="getChecked()" id='check1'>
+
+            <p>Estoy de acuerdo con <a href="https://c.tenor.com/aDSnQt41V5UAAAAd/will-smith-slap.gif" onclick="window.open('https://c.tenor.com/aDSnQt41V5UAAAAd/will-smith-slap.gif', 
+                'newwindow', 
+                'width=300,height=250'); 
+                return false;"> terminos y condiciones</a> </p>
+
+        </section>
+        
+
+    </section>
+
+    <div> 
+        <a href="index.html"><button >Home</button></a>
+    </div>
+    
+</body>
+
+<script src="funcion_uno.js"></script>
+</html>
